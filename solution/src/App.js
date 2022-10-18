@@ -1,10 +1,13 @@
-import './App.css';
+import Card from "./components/Card"
+import Header from "./components/Header"
+import Container from "react-bootstrap/Container"
 
 function App() {
   return (
-    <div className="App">
-      <h1>Start</h1>
-    </div>
+    <Container className="">
+      <Header />
+      <Card />
+    </Container>
   );
 }
 

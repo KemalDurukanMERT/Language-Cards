@@ -6,20 +6,22 @@ const Language = ({name, img, options}) => {
     const [showImage, setShowImage] = useState(true);
     return (
         <Container
+            style={{background: "peachpuff"}}
+            className="p-4 rounded-2 h-100 lang-card"
             type = "button"
             onClick={() => setShowImage(!showImage)}
         >
             {showImage && (
                 <Container>
-                    <Image src={img} width="70%"></Image>
-                    <h3>{name}</h3>
+                    <Image className="lang-logo" src={img} width="70%"></Image>
+                    <h3 className="display-6">{name}</h3>
                 </Container>
             )}
 
             {!showImage && (
-                <ol>
+                <ol className="h-100 d-flex flex-column justify-content-center">
                     {options.map((item) => {
-                        return <li>{item}</li>
+                        return <li className="h5 text-start">{item}</li>
                     })}
                 </ol>
             )}

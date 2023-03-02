@@ -1,6 +1,6 @@
-<p>Clarusway<img src="./assets/cw.png" alt="clarusway" width="30px" height="auto" align="right" /></p>
+## Language Card Project
 
-<br>
+Live Server: https://cozy-scone-6e106b.netlify.app/
 
 # Project-002: Language Cards (RP-02)
 
